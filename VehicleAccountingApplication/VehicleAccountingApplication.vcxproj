@@ -128,16 +128,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="GCLI.cpp" />
+    <ClCompile Include="DAO\FileProcessorInterface.cpp" />
+    <ClCompile Include="Table\BaseTable.cpp" />
+    <ClCompile Include="DAO\DAO.cpp" />
+    <ClCompile Include="GUI\GCLI.cpp" />
     <ClCompile Include="KeyHandler.cpp" />
+    <ClCompile Include="Table\BaseTitle.cpp" />
     <ClCompile Include="VehicleAccountingApplication.cpp" />
-    <ClCompile Include="TableUnitVehicle.cpp" />
+    <ClCompile Include="Vehicle\VehicleBoat.cpp" />
+    <ClCompile Include="Vehicle\VehicleCar.cpp" />
+    <ClCompile Include="Vehicle\VehiclePlane.cpp" />
+    <ClCompile Include="Vehicle\VehicleSpaceShip.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DAO\FileProcessorInterface.h" />
+    <ClInclude Include="Table\BaseTable.h" />
+    <ClInclude Include="DAO\DAO.h" />
     <ClInclude Include="ExternalDependencies.h" />
-    <ClInclude Include="GCLI.h" />
+    <ClInclude Include="GUI\GCLI.h" />
     <ClInclude Include="KeyHandler.h" />
-    <ClInclude Include="TableUnitVehicle.h" />
+    <ClInclude Include="Table\BaseTitle.h" />
+    <ClInclude Include="Vehicle\VehicleBoat.h" />
+    <ClInclude Include="Vehicle\VehicleCar.h" />
+    <ClInclude Include="Vehicle\VehicleInterface.h" />
+    <ClInclude Include="Vehicle\VehiclePlane.h" />
+    <ClInclude Include="Vehicle\VehicleSpaceShip.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lang\RU.lng" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

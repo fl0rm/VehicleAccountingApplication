@@ -2,6 +2,7 @@
 
 #include <windows.h>
 #include <unordered_map>
+#include <iostream>
 
 class KeyHandler {
 private:
