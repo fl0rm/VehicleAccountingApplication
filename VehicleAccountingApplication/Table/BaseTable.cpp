@@ -80,7 +80,7 @@ BaseTable::~BaseTable() {
 //------------------------------
 void BaseTable::RenderingTheTable( ActiveWindow visible_) {
     std::ostringstream os;
-    std::string separation(width_, '-');
+    std::string separation(width_ - 1, '-');
     int16_t offset = (width_ - column_.sym()) / 7;
     int16_t tmp_counter;
 
@@ -218,7 +218,7 @@ std::ostringstream BaseTable::RederingTheCell(unsigned int i, TitlePoints cell, 
                 shift += offset + column_.size_.at(static_cast<TitlePoints>(i)) + 1;
             }
             shift = width_ - shift - 3;
-            os << conditions_table_[i].first->PrintAdditions(additionals_field_names_).substr(0, shift) << "...";
+            os << conditions_table_[i].first->PrintAdditions(additionals_field_names_).substr(0, shift - 1) << "...";
         }
         else
             os << conditions_table_[i].first->PrintAdditions(additionals_field_names_);

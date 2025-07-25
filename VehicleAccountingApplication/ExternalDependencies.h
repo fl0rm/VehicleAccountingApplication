@@ -151,13 +151,12 @@ struct Date {
 			size_t shift = 0;
 			num_vec.resize(str_vec.size());
 
-			for (size_t i = 0; i < str_vec.size(); i++) {
+			for (size_t i = str_vec.size() - 1; i > 0;  i--) {
 				try {
-					num_vec[i - shift] = std::stoi(str_vec[i]);
+					num_vec[i] = std::stoi(str_vec[i]);
 				}
 				catch (const std::invalid_argument& e) {
-					num_vec.erase(num_vec.begin() + i - shift);
-					shift++;
+					num_vec.erase(num_vec.begin() + i);
 				}
 			}
 
@@ -168,7 +167,7 @@ struct Date {
 		short day{}, month{};
 		int year{};
 		std::vector<std::string> split_str;
-		std::string tmp_str;
+		std::string tmp_str{};
 
 		for (auto i : str) {
 			if (i == ' ' || i == '.' || i == ',') { split_str.push_back(tmp_str); tmp_str.clear(); }

@@ -33,7 +33,7 @@ bool FileProcessorInterface::LoadLangPack(LangStruct& pack) {
 void FileProcessorInterface::RenderingFileSelector() {
     std::ostringstream os;
     std::string path;
-    std::string separation(width_, '-');
+    std::string separation(width_ - 1, '-');
     std::string page_offset((width_ - std::to_string(page_).length()) / 2, ' ');
 
 

@@ -120,7 +120,7 @@ void GCLI::ClearConsole() const{
 //------------------------------
 void GCLI::MainMenu() {
     std::ostringstream os;
-    std::string separation(width_, '-');
+    std::string separation(width_ - 1, '-');
     std::vector<std::string> menu_points;
 
     os << separation << std::endl;
@@ -175,6 +175,7 @@ void GCLI::Start() {
                     ClearConsole();
 
                     file_processor_.SetTitle(ActiveWindow::Table);
+                    table_.clear();
                     table_.RenderingTheTable(visible_);
                     break;
                     
