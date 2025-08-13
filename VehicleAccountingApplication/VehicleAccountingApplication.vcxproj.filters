@@ -15,75 +15,69 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="VehicleAccountingApplication.cpp">
+    <ClCompile Include="SourseFile\main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="GUI\GCLI.cpp">
+    <ClCompile Include="SourseFile\GUI\GCLI.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="KeyHandler.cpp">
+    <ClCompile Include="SourseFile\KeyHandler.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Vehicle\VehicleCar.cpp">
+    <ClCompile Include="SourseFile\Vehicle\VehicleCar.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Table\BaseTable.cpp">
+    <ClCompile Include="SourseFile\Table\BaseTable.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="DAO\DAO.cpp">
+    <ClCompile Include="SourseFile\Vehicle\VehiclePlane.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Vehicle\VehiclePlane.cpp">
+    <ClCompile Include="SourseFile\Vehicle\VehicleBoat.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Vehicle\VehicleBoat.cpp">
+    <ClCompile Include="SourseFile\Vehicle\VehicleSpaceShip.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Vehicle\VehicleSpaceShip.cpp">
+    <ClCompile Include="SourseFile\Table\BaseTitle.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Table\BaseTitle.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="DAO\FileProcessorInterface.cpp">
+    <ClCompile Include="SourseFile\core\launcher.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GUI\GCLI.h">
+    <ClInclude Include="SourseFile\GUI\GCLI.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="ExternalDependencies.h">
+    <ClInclude Include="SourseFile\ExternalDependencies.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="KeyHandler.h">
+    <ClInclude Include="SourseFile\KeyHandler.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Vehicle\VehicleCar.h">
+    <ClInclude Include="SourseFile\Vehicle\VehicleCar.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Vehicle\VehicleInterface.h">
+    <ClInclude Include="SourseFile\Vehicle\VehicleInterface.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Table\BaseTable.h">
+    <ClInclude Include="SourseFile\Table\BaseTable.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Vehicle\VehiclePlane.h">
+    <ClInclude Include="SourseFile\Vehicle\VehiclePlane.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Vehicle\VehicleBoat.h">
+    <ClInclude Include="SourseFile\Vehicle\VehicleBoat.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Vehicle\VehicleSpaceShip.h">
+    <ClInclude Include="SourseFile\Vehicle\VehicleSpaceShip.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="DAO\DAO.h">
+    <ClInclude Include="SourseFile\Table\BaseTitle.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Table\BaseTitle.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="DAO\FileProcessorInterface.h">
+    <ClInclude Include="SourseFile\core\launcher.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

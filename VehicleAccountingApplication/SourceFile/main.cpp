@@ -1,7 +1,7 @@
 #include <windows.h>
 #include <crtdbg.h>
 
-#include "GUI/GCLI.h"
+#include "Core/Launcher.h"
 
 int main() {
     SetConsoleOutputCP(1251);
@@ -9,9 +9,7 @@ int main() {
 
     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
     
-    GCLI consol;
-    
-    consol.Start();
+    Core::Launcher* launcher = new Core::Launcher();
 
-    return 0;
+    return launcher ? launcher->exec() : 1;
 }
